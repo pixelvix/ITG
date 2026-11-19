@@ -36,12 +36,14 @@
  pointer-events: none;
 }
 
-.product-btnContainer button:hover,.hero-btn-area a:hover, .product-btnContainer:hover button svg path, .hero-btn-area:hover a svg path {
- color: #fff;
-   stroke: #fff;
- background-color: #1A1A1A;
- box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
- transform: translateY(-2px);
+@media (hover: hover) {
+    .product-btnContainer button:hover,.hero-btn-area a:hover, .product-btnContainer:hover button svg path, .hero-btn-area:hover a svg path {
+        color: #fff;
+        stroke: #fff;
+        background-color: #1A1A1A;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
 }
 
 .product-btnContainer button:active,.hero-btn-area a:active {
@@ -49,9 +51,10 @@
  transform: translateY(0);
 }
 
-.heroSection a:hover {
-   background-color: #7d41ce;
-   color: aliceblue;
-    border: 0.125em solid transparent;
-
+@media (hover: hover) {
+    .heroSection a:hover {
+        background-color: #7d41ce;
+        color: aliceblue;
+        border: 0.125em solid transparent;
+    }
 }

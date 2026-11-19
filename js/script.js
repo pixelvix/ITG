@@ -56,6 +56,7 @@ async function loadIncludes(){
                 
                 if (headerResponse.ok) {
                     document.getElementById('header').innerHTML = await headerResponse.text();
+                    convertNav();
                 }
                 
                 if (footerResponse.ok) {
@@ -68,10 +69,6 @@ async function loadIncludes(){
         
 // Load includes when page is ready
 document.addEventListener('DOMContentLoaded', loadIncludes);
-
-document.addEventListener('DOMContentLoad', convertNav);
-document.addEventListener('resize', convertNav);
-document.addEventListener('click', convertNav)
 
 window.addEventListener("load", fitAllMonthTexts);
 window.addEventListener("resize", fitAllMonthTexts);
