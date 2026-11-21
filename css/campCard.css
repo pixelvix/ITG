@@ -65,7 +65,7 @@
 }
 
 .campCard {
-    flex: 0 0 427px;
+    flex: 0 0 min(427px, 85vw);
     flex-wrap: nowrap;
     position: relative;
     height: 500px;
@@ -82,8 +82,10 @@
     transition: transform 100ms cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
+@media (hover: hover) {
 .campCard:hover {
     transform: scale(1.05);
+}
 }
 
 .campCard-img {
