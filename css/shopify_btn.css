@@ -33,10 +33,12 @@
   position: relative;
 }
 
-.btn-shopify:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  background-color: #5e8e3e;
+@media (hover: hover) {
+    .btn-shopify:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        background-color: #5e8e3e;
+    }
 }
 
 .btn-shopify:active {
